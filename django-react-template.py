@@ -32,7 +32,7 @@ except ModuleNotFoundError as e:
 os.system(f"django-admin startproject {project_name}")
 os.chdir(project_name)
 os.system(f"python manage.py startapp api")
-os.system('npx create-react-app app')
+os.system('npx create-react-app my-app --template tailwindcss-typescript')
 
 # Install Django REST Framework and other packages
 os.system('pipenv install')
